@@ -24,6 +24,7 @@ trap cleanup EXIT INT TERM
 echo -e "${BLUE}Starting backend...${NC}"
 cd backend
 source venv/bin/activate
+echo -e "Environment is activated"
 python main.py > ../backend.log 2>&1 &
 BACKEND_PID=$!
 cd ..

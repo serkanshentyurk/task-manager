@@ -318,13 +318,6 @@ If something doesn't work:
 
 **Scheduling:**
 - `backend/scheduling.py` - Modify algorithm
-
-## License
-
-This is your personal project - do whatever you want with it!
-
 ---
 
 **Enjoy your new task manager!** 🎉
-
-Start with creating a few tasks and clicking Auto-Schedule to see it in action.
