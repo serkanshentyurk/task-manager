@@ -1,0 +1,20 @@
+INFO:     Started server process [45221]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:56091 - "OPTIONS /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56093 - "OPTIONS /projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56094 - "OPTIONS /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56095 - "OPTIONS /stats/overview HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56093 - "GET /projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56091 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56094 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56095 - "GET /stats/overview HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56095 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56094 - "GET /projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56091 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56093 - "GET /stats/overview HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56110 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56112 - "GET /projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56113 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56114 - "GET /stats/overview HTTP/1.1" 200 OK
