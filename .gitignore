@@ -29,6 +29,7 @@ env.bak/
 venv.bak/
 
 # Database - Keep folder but ignore database files
+data/*
 data/*.db
 data/*.db-journal
 data/*.db-shm
