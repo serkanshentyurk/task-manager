@@ -9,6 +9,11 @@
   const dispatch = createEventDispatcher();
 
   let viewMode = 'week'; // 'week' or 'month'
+  
+  // Drag and drop state
+  let draggingSlot = null;
+  let dragOverDay = null;
+  let dragOverY = null;
 
   // Use startDate from props directly
   $: currentWeekStart = getWeekStart(startDate || new Date());
@@ -81,6 +86,124 @@
 
   function handleSlotClick(slot) {
     dispatch('slotClick', slot);
+  }
+
+  // Drag and drop handlers
+  function handleDragStart(event, slot) {
+    draggingSlot = slot;
+    event.dataTransfer.effectAllowed = 'move';
+    event.dataTransfer.setData('text/plain', slot.id);
+    event.target.style.opacity = '0.5';
+  }
+
+  function handleDragEnd(event) {
+    event.target.style.opacity = '1';
+    draggingSlot = null;
+    dragOverDay = null;
+    dragOverY = null;
+  }
+
+  function handleDragOver(event, day) {
+    event.preventDefault();
+    event.dataTransfer.dropEffect = 'move';
+    
+    // Get the calendar column element
+    const dayColumn = event.currentTarget;
+    const rect = dayColumn.getBoundingClientRect();
+    const y = event.clientY - rect.top;
+    
+    dragOverDay = day;
+    dragOverY = y;
+  }
+
+  function handleDrop(event, day) {
+    event.preventDefault();
+    
+    console.log('Drop event triggered', { draggingSlot, day });
+    
+    if (!draggingSlot) {
+      console.log('No dragging slot, returning');
+      return;
+    }
+    
+    // event.currentTarget is already the .day-slots div
+    const daySlots = event.currentTarget;
+    const rect = daySlots.getBoundingClientRect();
+    const y = event.clientY - rect.top;
+    
+    // Convert pixel position to time (60px per hour, starting at 9am)
+    const hours = Math.floor(y / 60) + 9;
+    const minutes = Math.round(((y % 60) / 60) * 60 / 15) * 15; // Round to 15 min intervals
+    
+    // Create new start time
+    const newStart = new Date(day);
+    newStart.setHours(hours, minutes, 0, 0);
+    
+    console.log('Calculated new time:', {
+      hours,
+      minutes,
+      newStart: newStart.toISOString(),
+      originalSlot: draggingSlot
+    });
+    
+    // Dispatch move event
+    dispatch('slotMove', {
+      slot: draggingSlot,
+      newStart: newStart.toISOString()
+    });
+    
+    console.log('Dispatched slotMove event');
+    
+    draggingSlot = null;
+    dragOverDay = null;
+    dragOverY = null;
+  }
+
+  function handleEmptySlotClick(event, day) {
+    // Only trigger if clicking directly on day-slots or hour-block (empty space)
+    const target = event.target;
+    if (!target.classList.contains('day-slots') && !target.classList.contains('hour-block')) {
+      return; // Clicked on a slot, not empty space
+    }
+    
+    const daySlots = event.currentTarget;
+    const rect = daySlots.getBoundingClientRect();
+    const y = event.clientY - rect.top;
+    
+    // Calculate time from click position
+    const pixelsPerHour = 60;
+    const hours = Math.floor(y / pixelsPerHour) + 9;
+    const minutes = Math.round(((y % 60) / 60) * 60 / 15) * 15;
+    
+    // Create start time
+    const clickTime = new Date(day);
+    clickTime.setHours(hours, minutes, 0, 0);
+    
+    // Find next slot or end of day for end time
+    const daySlotsForDay = getSlotsForDay(day);
+    let endTime = new Date(clickTime);
+    endTime.setHours(18, 0, 0, 0); // Default to end of work day
+    
+    // Find next slot after click time
+    for (const slot of daySlotsForDay) {
+      const slotStart = new Date(slot.start_datetime);
+      if (slotStart > clickTime) {
+        endTime = slotStart;
+        break;
+      }
+    }
+    
+    // Minimum 30 min slot
+    if ((endTime - clickTime) / (1000 * 60) < 30) {
+      endTime = new Date(clickTime.getTime() + 30 * 60 * 1000);
+    }
+    
+    console.log('Empty slot clicked:', { clickTime, endTime });
+    
+    dispatch('emptySlotClick', {
+      startTime: clickTime.toISOString(),
+      endTime: endTime.toISOString()
+    });
   }
 
   function previousWeek() {
@@ -161,24 +284,37 @@
         <div class="day-header" class:today={isToday(day)}>
           {formatDateHeader(day)}
         </div>
-        <div class="day-slots">
+        <div 
+          class="day-slots"
+          on:click={(e) => handleEmptySlotClick(e, day)}
+          on:dragover={(e) => handleDragOver(e, day)}
+          on:drop={(e) => handleDrop(e, day)}
+        >
           {#each Array(9) as _, hour}
             <div class="hour-block"></div>
           {/each}
           
           {#each getSlotsForDay(day) as slot}
             {@const task = getTaskForSlot(slot)}
+            {@const isFixed = slot.is_fixed || false}
             <div 
               class="slot"
+              class:dragging={draggingSlot?.id === slot.id}
+              draggable={!isFixed}
               style="
                 top: {getSlotTop(slot)}px;
                 height: {getSlotHeight(slot)}px;
                 background-color: {getSlotColor(slot)};
+                cursor: {isFixed ? 'pointer' : 'grab'};
               "
               on:click={() => handleSlotClick(slot)}
+              on:dragstart={(e) => handleDragStart(e, slot)}
+              on:dragend={handleDragEnd}
               title={task?.title || 'Unknown task'}
             >
-              <div class="slot-title">{task?.title || 'Unknown'}</div>
+              <div class="slot-title">
+                {#if isFixed}🔒 {/if}{task?.title || 'Unknown'}
+              </div>
               <div class="slot-time">
                 {formatTime(slot.start_datetime)} - {formatTime(slot.end_datetime)}
               </div>
@@ -259,6 +395,19 @@
     font-size: 12px;
     transition: all 0.2s;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .slot.dragging {
+    opacity: 0.5;
+    cursor: grabbing;
+  }
+
+  .slot[draggable="true"] {
+    cursor: grab;
+  }
+
+  .slot[draggable="true"]:active {
+    cursor: grabbing;
   }
 
   .slot:hover {

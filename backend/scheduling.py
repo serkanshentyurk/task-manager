@@ -73,6 +73,7 @@ def has_conflict(start_datetime: datetime, end_datetime: datetime,
         params.append(exclude_task_id)
     
     query += """
+        AND s.completed = 0
         AND NOT (s.end_datetime <= ? OR s.start_datetime >= ?)
         AND (s.is_override = 0 OR (s.is_override = 1 AND s.start_datetime IS NOT NULL))
     """
@@ -112,6 +113,7 @@ def get_available_time_in_slot(slot_start: datetime, slot_end: datetime,
         FROM scheduled_slots s
         JOIN tasks t ON s.task_id = t.id
         WHERE (t.id != ? OR ? IS NULL)
+        AND s.completed = 0
         AND NOT (end_datetime <= ? OR start_datetime >= ?)
         AND (s.is_override = 0 OR (s.is_override = 1 AND s.start_datetime IS NOT NULL))
         ORDER BY start_datetime

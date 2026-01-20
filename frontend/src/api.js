@@ -55,6 +55,7 @@ export const api = {
   }),
   deleteTask: (id) => request(`/tasks/${id}`, { method: 'DELETE' }),
   completeTask: (id) => request(`/tasks/${id}/complete`, { method: 'POST' }),
+  sanityCheckTasks: () => request('/tasks/sanity-check'),
   getUnscheduledTasks: () => request('/tasks/unscheduled'),
 
   // Slots
@@ -62,12 +63,24 @@ export const api = {
     const params = new URLSearchParams({ start_date: startDate, end_date: endDate });
     return request(`/slots?${params}`);
   },
+  createManualSlot: (data) => request('/slots/manual', {
+    method: 'POST',
+    body: JSON.stringify(data),
+  }),
   deleteSlot: (id) => request(`/slots/${id}`, { method: 'DELETE' }),
-  moveSlot: (id, newStart) => request(`/slots/${id}/move`, {
+  moveSlot: (id, newStart, swapWithId = null) => request(`/slots/${id}/move`, {
+    method: 'PUT',
+    body: JSON.stringify({ 
+      new_start: newStart,
+      swap_with_slot_id: swapWithId 
+    }),
+  }),
+  moveSlotWithSwap: (id, swapWithId, newStart) => request(`/slots/${id}/move-with-swap?swap_with_id=${swapWithId}`, {
     method: 'PUT',
     body: JSON.stringify({ new_start: newStart }),
   }),
   completeSlot: (id) => request(`/slots/${id}/complete`, { method: 'POST' }),
+  getFillSuggestions: (startTime, endTime) => request(`/slots/fill-suggestions?start_time=${encodeURIComponent(startTime)}&end_time=${encodeURIComponent(endTime)}`),
 
   // Scheduling
   autoSchedule: () => request('/schedule/auto', { method: 'POST' }),
@@ -103,4 +116,12 @@ export const api = {
 
   // Stats
   getStats: () => request('/stats/overview'),
+  
+  // Time Allocations (Recurring Tasks)
+  createTimeAllocation: (data) => request('/time-allocations', {
+    method: 'POST',
+    body: JSON.stringify(data),
+  }),
+  getTimeAllocations: (taskId) => request(`/time-allocations/${taskId}`),
+  deleteTimeAllocation: (id) => request(`/time-allocations/${id}`, { method: 'DELETE' }),
 };

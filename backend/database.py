@@ -81,6 +81,7 @@ class Database:
                 source TEXT CHECK(source IN ('allocation', 'auto', 'manual')) DEFAULT 'auto',
                 is_override BOOLEAN DEFAULT 0,
                 original_start DATETIME,
+                is_fixed BOOLEAN DEFAULT 0,
                 completed BOOLEAN DEFAULT 0,
                 completed_at TIMESTAMP,
                 actual_hours REAL,
@@ -88,6 +89,13 @@ class Database:
                 FOREIGN KEY (task_id) REFERENCES tasks(id)
             )
         """)
+        
+        # Migration: Add is_fixed column if it doesn't exist
+        try:
+            cursor.execute("SELECT is_fixed FROM scheduled_slots LIMIT 1")
+        except:
+            cursor.execute("ALTER TABLE scheduled_slots ADD COLUMN is_fixed BOOLEAN DEFAULT 0")
+            self.conn.commit()
         
         # Blocked times (meetings, lunch breaks, etc.)
         cursor.execute("""

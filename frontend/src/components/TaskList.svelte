@@ -3,6 +3,7 @@
 
   export let tasks = [];
   export let projects = [];
+  export let sanityCheckResults = null;
 
   const dispatch = createEventDispatcher();
 
@@ -45,6 +46,11 @@
     if (diffDays <= 7) return `${diffDays} days`;
     return date.toLocaleDateString();
   }
+
+  function getTaskMismatch(taskId) {
+    if (!sanityCheckResults || !sanityCheckResults.mismatches) return null;
+    return sanityCheckResults.mismatches.find(m => m.task_id === taskId);
+  }
 </script>
 
 <div class="card">
@@ -73,6 +79,17 @@
     </button>
   </div>
 
+  {#if sanityCheckResults && sanityCheckResults.mismatch_count > 0}
+    <div style="margin-bottom: 16px; padding: 12px; background: #fef3c7; border: 1px solid #fbbf24; border-radius: 6px; font-size: 13px;">
+      <div style="font-weight: 500; margin-bottom: 4px;">
+        ⚠️ {sanityCheckResults.mismatch_count} {sanityCheckResults.mismatch_count === 1 ? 'task has' : 'tasks have'} scheduling mismatches
+      </div>
+      <div style="color: #92400e;">
+        Estimated hours don't match scheduled slots. Use "⚠️ Fix Mismatch" buttons below to resolve.
+      </div>
+    </div>
+  {/if}
+
   <div style="max-height: 600px; overflow-y: auto;">
     {#if filteredTasks.length === 0}
       <div style="padding: 20px; text-align: center; color: #9ca3af;">
@@ -80,6 +97,7 @@
       </div>
     {:else}
       {#each filteredTasks as task}
+        {@const mismatch = getTaskMismatch(task.id)}
         <div 
           class="task-item"
           on:click={() => dispatch('taskClick', task)}
@@ -103,9 +121,41 @@
                 {getProjectName(task.project_id)}
               </span>
             {/if}
+            {#if mismatch}
+              <span>•</span>
+              <span 
+                style="color: #ef4444; font-weight: 500;" 
+                title="Estimated: {mismatch.estimated_hours}h, Scheduled: {mismatch.scheduled_hours}h (Completed: {mismatch.completed_hours}h, Incomplete: {mismatch.incomplete_hours}h)"
+              >
+                ⚠️ {mismatch.difference > 0 ? 'Under' : 'Over'}-scheduled by {Math.abs(mismatch.difference)}h
+              </span>
+            {/if}
           </div>
 
-          <div style="margin-top: 8px; display: flex; gap: 6px;">
+          <div style="margin-top: 8px; display: flex; gap: 6px; flex-wrap: wrap;">
+            {#if mismatch}
+              <button 
+                class="btn btn-sm btn-warning"
+                on:click|stopPropagation={() => {
+                  const action = confirm(
+                    `Fix scheduling mismatch for "${task.title}"?\n\n` +
+                    `Current: ${mismatch.scheduled_hours}h scheduled (${mismatch.completed_hours}h done, ${mismatch.incomplete_hours}h remaining)\n` +
+                    `Expected: ${mismatch.estimated_hours}h\n\n` +
+                    `Choose:\n` +
+                    `OK = Delete slots and auto-reschedule to ${mismatch.estimated_hours}h\n` +
+                    `Cancel = Update estimated hours to ${mismatch.scheduled_hours}h`
+                  );
+                  
+                  if (action === true) {
+                    dispatch('fixMismatch', { task, mismatch, action: 'reschedule' });
+                  } else if (action === false) {
+                    dispatch('fixMismatch', { task, mismatch, action: 'update_estimated' });
+                  }
+                }}
+              >
+                ⚠️ Fix Mismatch
+              </button>
+            {/if}
             {#if task.status !== 'completed'}
               <button 
                 class="btn btn-sm btn-success"

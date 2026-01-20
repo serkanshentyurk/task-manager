@@ -87,3 +87,15 @@ class EmailSettingsUpdate(BaseModel):
     monday_digest: Optional[bool] = None
     daily_deadline_alert: Optional[bool] = None
     alert_hour: Optional[int] = Field(default=None, ge=0, le=23)
+
+
+class ManualSlotCreate(BaseModel):
+    task_id: int
+    start_datetime: datetime
+    end_datetime: datetime
+    is_fixed: bool = False
+
+
+class SlotMove(BaseModel):
+    new_start: datetime
+    swap_with_slot_id: Optional[int] = None  # For handling conflicts

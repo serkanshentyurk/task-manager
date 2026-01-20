@@ -1,149 +1,2023 @@
-INFO:     Started server process [45585]
+INFO:     Started server process [51416]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-INFO:     127.0.0.1:56230 - "OPTIONS /tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56231 - "OPTIONS /projects HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56232 - "OPTIONS /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56233 - "OPTIONS /stats/overview HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56231 - "GET /projects HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56232 - "GET /tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56230 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56233 - "GET /stats/overview HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56241 - "OPTIONS /slots?start_date=2026-01-26&end_date=2026-02-01 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56238 - "GET /tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56240 - "GET /projects HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56241 - "GET /slots?start_date=2026-01-26&end_date=2026-02-01 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56242 - "GET /stats/overview HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56244 - "OPTIONS /schedule/auto HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56244 - "POST /schedule/auto HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56244 - "GET /tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56248 - "GET /projects HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56249 - "GET /slots?start_date=2026-01-26&end_date=2026-02-01 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56250 - "GET /stats/overview HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56249 - "GET /projects HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56250 - "GET /tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56248 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56244 - "GET /stats/overview HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56252 - "OPTIONS /slots/12/complete HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56252 - "POST /slots/12/complete HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56252 - "GET /tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56256 - "GET /projects HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56257 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56258 - "GET /stats/overview HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56258 - "OPTIONS /tasks/9/complete HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56258 - "POST /tasks/9/complete HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56258 - "GET /tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56256 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56257 - "GET /projects HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56252 - "GET /stats/overview HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56252 - "OPTIONS /tasks/13/complete HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56252 - "POST /tasks/13/complete HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56257 - "GET /projects HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56252 - "GET /tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56256 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56258 - "GET /stats/overview HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56258 - "OPTIONS /tasks/14/complete HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56258 - "POST /tasks/14/complete HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56256 - "GET /projects HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56252 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56258 - "GET /tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56257 - "GET /stats/overview HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56257 - "POST /schedule/auto HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56257 - "GET /tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56261 - "GET /projects HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56263 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56264 - "GET /stats/overview HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56269 - "GET /projects HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56267 - "GET /tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56271 - "GET /slots?start_date=2026-01-26&end_date=2026-02-01 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56272 - "GET /stats/overview HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56274 - "GET /tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56277 - "GET /projects HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56278 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56280 - "GET /stats/overview HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56282 - "OPTIONS /tasks/11/complete HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56282 - "POST /tasks/11/complete HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56282 - "GET /tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56286 - "GET /projects HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56287 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56288 - "GET /stats/overview HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56290 - "OPTIONS /tasks/15/complete HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56290 - "POST /tasks/15/complete HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56290 - "GET /tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56294 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56293 - "GET /projects HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56296 - "GET /stats/overview HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56296 - "OPTIONS /tasks/16/complete HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56296 - "POST /tasks/16/complete HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56293 - "GET /projects HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56294 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56296 - "GET /tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56290 - "GET /stats/overview HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56298 - "OPTIONS /slots/10/complete HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56298 - "POST /slots/10/complete HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56298 - "GET /tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56302 - "GET /projects HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56303 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56304 - "GET /stats/overview HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56304 - "POST /slots/10/complete HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56303 - "GET /projects HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56304 - "GET /tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56302 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56298 - "GET /stats/overview HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56298 - "POST /slots/10/complete HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56302 - "GET /projects HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56304 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56298 - "GET /tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56303 - "GET /stats/overview HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56298 - "GET /projects HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56304 - "GET /slots?start_date=2026-01-26&end_date=2026-02-01 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56303 - "GET /tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56302 - "GET /stats/overview HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56302 - "GET /tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56303 - "GET /projects HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56304 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56298 - "GET /stats/overview HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56311 - "OPTIONS /tasks/with-scheduling?force_bump=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56311 - "POST /tasks/with-scheduling?force_bump=true HTTP/1.1" 422 Unprocessable Entity
-INFO:     127.0.0.1:56313 - "POST /tasks/with-scheduling?force_bump=true HTTP/1.1" 422 Unprocessable Entity
-/Users/Serkan/Desktop/pro/code/task-manager/backend/main.py:459: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.5/migration/
+INFO:     127.0.0.1:61650 - "OPTIONS /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61651 - "OPTIONS /projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61654 - "OPTIONS /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61655 - "OPTIONS /stats/overview HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61654 - "GET /projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61655 - "GET /tasks HTTP/1.1" 200 OK
+get_slots: Returning 4 slots (completed=0 only)
+INFO:     127.0.0.1:61651 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61650 - "GET /stats/overview HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61650 - "OPTIONS /tasks/sanity-check HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 2 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+=== SANITY CHECK COMPLETE: 0 mismatches found ===
+INFO:     127.0.0.1:61650 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+get_slots: Returning 4 slots (completed=0 only)
+INFO:     127.0.0.1:61651 - "GET /projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61655 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61650 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61654 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 2 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+=== SANITY CHECK COMPLETE: 0 mismatches found ===
+INFO:     127.0.0.1:61654 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61654 - "OPTIONS /settings/calendar HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61654 - "GET /settings/calendar HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61654 - "OPTIONS /blocked-times HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61654 - "GET /blocked-times HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61659 - "GET /settings/calendar HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61659 - "GET /blocked-times HTTP/1.1" 200 OK
+/Users/Serkan/Desktop/pro/code/task-manager/backend/main.py:686: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.5/migration/
+  update_dict = updates.dict(exclude_none=True)
+INFO:     127.0.0.1:61659 - "PATCH /settings/calendar HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61659 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61663 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 4 slots (completed=0 only)
+INFO:     127.0.0.1:61664 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61665 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 2 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+=== SANITY CHECK COMPLETE: 0 mismatches found ===
+INFO:     127.0.0.1:61665 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61668 - "OPTIONS /tasks HTTP/1.1" 200 OK
+/Users/Serkan/Desktop/pro/code/task-manager/backend/main.py:350: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.5/migration/
   task_dict = task.dict()
-INFO:     127.0.0.1:56315 - "POST /tasks/with-scheduling?force_bump=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56315 - "GET /tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56319 - "GET /projects HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56320 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56321 - "GET /stats/overview HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56328 - "OPTIONS /tasks/with-scheduling?force_bump=false HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56328 - "POST /tasks/with-scheduling?force_bump=false HTTP/1.1" 422 Unprocessable Entity
-INFO:     127.0.0.1:56330 - "POST /tasks/with-scheduling?force_bump=false HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56330 - "GET /tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56334 - "GET /projects HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56335 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56336 - "GET /stats/overview HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56338 - "POST /schedule/auto HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56338 - "GET /tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56340 - "GET /projects HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56343 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56344 - "GET /stats/overview HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56349 - "POST /tasks/with-scheduling?force_bump=false HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56349 - "GET /tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56353 - "GET /projects HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56354 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56355 - "GET /stats/overview HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56357 - "GET /tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56360 - "GET /projects HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56362 - "GET /slots?start_date=2026-01-26&end_date=2026-02-01 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56363 - "GET /stats/overview HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56363 - "GET /tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56362 - "GET /projects HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56360 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56357 - "GET /stats/overview HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56360 - "GET /projects HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56362 - "GET /slots?start_date=2026-01-26&end_date=2026-02-01 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56357 - "GET /tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56363 - "GET /stats/overview HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56366 - "GET /tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56368 - "GET /projects HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56370 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56371 - "GET /stats/overview HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61668 - "POST /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61668 - "OPTIONS /slots/manual HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61668 - "POST /slots/manual HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61668 - "OPTIONS /time-allocations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61668 - "POST /time-allocations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61668 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61672 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 5 slots (completed=0 only)
+INFO:     127.0.0.1:61673 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61674 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 3 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 5: Lab Meeting
+  Task 5 has 50 slots
+  Estimated: 2.0h, Scheduled: 100.0h, Diff: 98.0h
+  MISMATCH FOUND for task 5
+=== SANITY CHECK COMPLETE: 1 mismatches found ===
+INFO:     127.0.0.1:61674 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61676 - "OPTIONS /slots?start_date=2026-01-19&end_date=2027-01-19 HTTP/1.1" 200 OK
+get_slots: Returning 54 slots (completed=0 only)
+INFO:     127.0.0.1:61676 - "GET /slots?start_date=2026-01-19&end_date=2027-01-19 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61682 - "OPTIONS /slots?start_date=2026-01-26&end_date=2026-02-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61680 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61681 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 1 slots (completed=0 only)
+INFO:     127.0.0.1:61682 - "GET /slots?start_date=2026-01-26&end_date=2026-02-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61684 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 3 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 5: Lab Meeting
+  Task 5 has 50 slots
+  Estimated: 2.0h, Scheduled: 100.0h, Diff: 98.0h
+  MISMATCH FOUND for task 5
+=== SANITY CHECK COMPLETE: 1 mismatches found ===
+INFO:     127.0.0.1:61684 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+get_slots: Returning 5 slots (completed=0 only)
+INFO:     127.0.0.1:61684 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61682 - "GET /projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61681 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61680 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 3 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 5: Lab Meeting
+  Task 5 has 50 slots
+  Estimated: 2.0h, Scheduled: 100.0h, Diff: 98.0h
+  MISMATCH FOUND for task 5
+=== SANITY CHECK COMPLETE: 1 mismatches found ===
+INFO:     127.0.0.1:61680 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61687 - "OPTIONS /tasks/5 HTTP/1.1" 200 OK
+/Users/Serkan/Desktop/pro/code/task-manager/backend/main.py:374: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.5/migration/
+  update_dict = updates.dict(exclude_none=True)
+INFO:     127.0.0.1:61687 - "PATCH /tasks/5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61687 - "GET /tasks HTTP/1.1" 200 OK
+get_slots: Returning 5 slots (completed=0 only)
+INFO:     127.0.0.1:61691 - "GET /projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61692 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61693 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 3 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 5: Lab Meeting
+  Task 5 has 50 slots
+  Estimated: 100.0h, Scheduled: 100.0h, Diff: 0.0h
+=== SANITY CHECK COMPLETE: 0 mismatches found ===
+INFO:     127.0.0.1:61693 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61692 - "GET /projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61693 - "GET /tasks HTTP/1.1" 200 OK
+get_slots: Returning 1 slots (completed=0 only)
+INFO:     127.0.0.1:61691 - "GET /slots?start_date=2026-01-26&end_date=2026-02-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61687 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 3 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 5: Lab Meeting
+  Task 5 has 50 slots
+  Estimated: 100.0h, Scheduled: 100.0h, Diff: 0.0h
+=== SANITY CHECK COMPLETE: 0 mismatches found ===
+INFO:     127.0.0.1:61687 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+get_slots: Returning 54 slots (completed=0 only)
+INFO:     127.0.0.1:61687 - "GET /slots?start_date=2026-01-19&end_date=2027-01-19 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61698 - "DELETE /tasks/5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61698 - "GET /tasks HTTP/1.1" 200 OK
+get_slots: Returning 0 slots (completed=0 only)
+INFO:     127.0.0.1:61702 - "GET /projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61703 - "GET /slots?start_date=2026-01-26&end_date=2026-02-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61704 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 2 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+=== SANITY CHECK COMPLETE: 0 mismatches found ===
+INFO:     127.0.0.1:61704 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61704 - "OPTIONS /slots/fill-suggestions?start_time=2026-01-27T10%3A15%3A00.000Z&end_time=2026-01-27T18%3A00%3A00.000Z HTTP/1.1" 200 OK
+Getting fill suggestions for 2026-01-27T10:15:00.000Z to 2026-01-27T18:00:00.000Z
+Available slot duration: 7.75h
+Found 0 future movable slots
+Returning 0 suggestions
+INFO:     127.0.0.1:61704 - "GET /slots/fill-suggestions?start_time=2026-01-27T10%3A15%3A00.000Z&end_time=2026-01-27T18%3A00%3A00.000Z HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61704 - "GET /tasks HTTP/1.1" 200 OK
+get_slots: Returning 4 slots (completed=0 only)
+INFO:     127.0.0.1:61707 - "GET /projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61709 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61710 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 2 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+=== SANITY CHECK COMPLETE: 0 mismatches found ===
+INFO:     127.0.0.1:61710 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61713 - "POST /tasks HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:61715 - "POST /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61715 - "POST /slots/manual HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61715 - "POST /time-allocations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61715 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61718 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 6 slots (completed=0 only)
+INFO:     127.0.0.1:61719 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61721 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 3 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 6: Lab Meeting
+  Task 6 has 54 slots
+  Estimated: 2.0h, Scheduled: 108.0h, Diff: 106.0h
+  MISMATCH FOUND for task 6
+=== SANITY CHECK COMPLETE: 1 mismatches found ===
+INFO:     127.0.0.1:61721 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61726 - "GET /projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61724 - "GET /tasks HTTP/1.1" 200 OK
+get_slots: Returning 1 slots (completed=0 only)
+INFO:     127.0.0.1:61728 - "GET /slots?start_date=2026-01-26&end_date=2026-02-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61729 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 3 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 6: Lab Meeting
+  Task 6 has 54 slots
+  Estimated: 2.0h, Scheduled: 108.0h, Diff: 106.0h
+  MISMATCH FOUND for task 6
+=== SANITY CHECK COMPLETE: 1 mismatches found ===
+INFO:     127.0.0.1:61729 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+get_slots: Returning 6 slots (completed=0 only)
+INFO:     127.0.0.1:61729 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61728 - "GET /projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61724 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61726 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 3 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 6: Lab Meeting
+  Task 6 has 54 slots
+  Estimated: 2.0h, Scheduled: 108.0h, Diff: 106.0h
+  MISMATCH FOUND for task 6
+=== SANITY CHECK COMPLETE: 1 mismatches found ===
+INFO:     127.0.0.1:61726 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+get_slots: Returning 1 slots (completed=0 only)
+INFO:     127.0.0.1:61724 - "GET /projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61728 - "GET /slots?start_date=2026-01-26&end_date=2026-02-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61726 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61729 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 3 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 6: Lab Meeting
+  Task 6 has 54 slots
+  Estimated: 2.0h, Scheduled: 108.0h, Diff: 106.0h
+  MISMATCH FOUND for task 6
+=== SANITY CHECK COMPLETE: 1 mismatches found ===
+INFO:     127.0.0.1:61729 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61736 - "OPTIONS /slots?start_date=2026-02-02&end_date=2026-02-08 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61734 - "GET /projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61732 - "GET /tasks HTTP/1.1" 200 OK
+get_slots: Returning 1 slots (completed=0 only)
+INFO:     127.0.0.1:61736 - "GET /slots?start_date=2026-02-02&end_date=2026-02-08 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61737 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 3 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 6: Lab Meeting
+  Task 6 has 54 slots
+  Estimated: 2.0h, Scheduled: 108.0h, Diff: 106.0h
+  MISMATCH FOUND for task 6
+=== SANITY CHECK COMPLETE: 1 mismatches found ===
+INFO:     127.0.0.1:61737 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61737 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61736 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 1 slots (completed=0 only)
+INFO:     127.0.0.1:61732 - "GET /slots?start_date=2026-01-26&end_date=2026-02-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61734 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 3 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 6: Lab Meeting
+  Task 6 has 54 slots
+  Estimated: 2.0h, Scheduled: 108.0h, Diff: 106.0h
+  MISMATCH FOUND for task 6
+=== SANITY CHECK COMPLETE: 1 mismatches found ===
+INFO:     127.0.0.1:61734 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61732 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 6 slots (completed=0 only)
+INFO:     127.0.0.1:61734 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61736 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61737 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 3 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 6: Lab Meeting
+  Task 6 has 54 slots
+  Estimated: 2.0h, Scheduled: 108.0h, Diff: 106.0h
+  MISMATCH FOUND for task 6
+=== SANITY CHECK COMPLETE: 1 mismatches found ===
+INFO:     127.0.0.1:61737 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61737 - "OPTIONS /tasks/6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61737 - "PATCH /tasks/6 HTTP/1.1" 200 OK
+get_slots: Returning 6 slots (completed=0 only)
+INFO:     127.0.0.1:61734 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61736 - "GET /projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61737 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61732 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 3 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 6: Lab Meeting
+  Task 6 has 54 slots
+  Estimated: 108.0h, Scheduled: 108.0h, Diff: 0.0h
+=== SANITY CHECK COMPLETE: 0 mismatches found ===
+INFO:     127.0.0.1:61732 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61739 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61741 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 1 slots (completed=0 only)
+INFO:     127.0.0.1:61744 - "GET /slots?start_date=2026-01-26&end_date=2026-02-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61745 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 3 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 6: Lab Meeting
+  Task 6 has 54 slots
+  Estimated: 108.0h, Scheduled: 108.0h, Diff: 0.0h
+=== SANITY CHECK COMPLETE: 0 mismatches found ===
+INFO:     127.0.0.1:61745 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+get_slots: Returning 58 slots (completed=0 only)
+INFO:     127.0.0.1:61745 - "GET /slots?start_date=2026-01-19&end_date=2027-01-19 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61747 - "OPTIONS /slots/82 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61747 - "DELETE /slots/82 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/middleware/cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/middleware/cors.py", line 146, in simple_response
+    await self.app(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/routing.py", line 762, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/routing.py", line 782, in app
+    await route.handle(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/routing.py", line 72, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/fastapi/routing.py", line 299, in app
+    raise e
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/fastapi/routing.py", line 294, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/concurrency.py", line 40, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/anyio/to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/Desktop/pro/code/task-manager/backend/main.py", line 518, in delete_slot
+    db.update('scheduled_slots', {
+  File "/Users/Serkan/Desktop/pro/code/task-manager/backend/database.py", line 205, in update
+    cursor.execute(query, tuple(data.values()) + where_params)
+sqlite3.IntegrityError: NOT NULL constraint failed: scheduled_slots.start_datetime
+INFO:     127.0.0.1:61754 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61757 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 6 slots (completed=0 only)
+INFO:     127.0.0.1:61759 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61760 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 3 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 6: Lab Meeting
+  Task 6 has 54 slots
+  Estimated: 108.0h, Scheduled: 108.0h, Diff: 0.0h
+=== SANITY CHECK COMPLETE: 0 mismatches found ===
+INFO:     127.0.0.1:61760 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61752 - "DELETE /tasks/6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61760 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 4 slots (completed=0 only)
+INFO:     127.0.0.1:61752 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61759 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61757 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 2 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+=== SANITY CHECK COMPLETE: 0 mismatches found ===
+INFO:     127.0.0.1:61757 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61759 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 0 slots (completed=0 only)
+INFO:     127.0.0.1:61757 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61752 - "GET /slots?start_date=2026-01-26&end_date=2026-02-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61760 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 2 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+=== SANITY CHECK COMPLETE: 0 mismatches found ===
+INFO:     127.0.0.1:61760 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61760 - "GET /tasks HTTP/1.1" 200 OK
+get_slots: Returning 4 slots (completed=0 only)
+INFO:     127.0.0.1:61752 - "GET /projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61757 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61759 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 2 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+=== SANITY CHECK COMPLETE: 0 mismatches found ===
+INFO:     127.0.0.1:61759 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61763 - "OPTIONS /tasks/with-scheduling?force_bump=true HTTP/1.1" 200 OK
+/Users/Serkan/Desktop/pro/code/task-manager/backend/main.py:742: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.5/migration/
+  task_dict = task.dict()
+INFO:     127.0.0.1:61763 - "POST /tasks/with-scheduling?force_bump=true HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/middleware/cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/middleware/cors.py", line 146, in simple_response
+    await self.app(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/routing.py", line 762, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/routing.py", line 782, in app
+    await route.handle(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/routing.py", line 72, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/fastapi/routing.py", line 299, in app
+    raise e
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/fastapi/routing.py", line 294, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/concurrency.py", line 40, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/anyio/to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/Desktop/pro/code/task-manager/backend/main.py", line 761, in create_task_with_scheduling
+    schedule_result = attempt_with_bumping(task_id)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/Desktop/pro/code/task-manager/backend/scheduling.py", line 414, in attempt_with_bumping
+    sessions, remaining = create_task_sessions(task, available_slots)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/Desktop/pro/code/task-manager/backend/scheduling.py", line 202, in create_task_sessions
+    available_ranges = get_available_time_in_slot(slot_start, slot_end, task['id'])
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/Desktop/pro/code/task-manager/backend/scheduling.py", line 137, in get_available_time_in_slot
+    all_conflicts.sort(key=lambda x: x[0])
+TypeError: can't compare offset-naive and offset-aware datetimes
+INFO:     127.0.0.1:61765 - "POST /tasks/with-scheduling?force_bump=true HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/middleware/cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/middleware/cors.py", line 146, in simple_response
+    await self.app(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/routing.py", line 762, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/routing.py", line 782, in app
+    await route.handle(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/routing.py", line 72, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/fastapi/routing.py", line 299, in app
+    raise e
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/fastapi/routing.py", line 294, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/concurrency.py", line 40, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/anyio/to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/Desktop/pro/code/task-manager/backend/main.py", line 761, in create_task_with_scheduling
+    schedule_result = attempt_with_bumping(task_id)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/Desktop/pro/code/task-manager/backend/scheduling.py", line 414, in attempt_with_bumping
+    sessions, remaining = create_task_sessions(task, available_slots)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/Desktop/pro/code/task-manager/backend/scheduling.py", line 202, in create_task_sessions
+    available_ranges = get_available_time_in_slot(slot_start, slot_end, task['id'])
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/Desktop/pro/code/task-manager/backend/scheduling.py", line 144, in get_available_time_in_slot
+    if current_start < conflict_start:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: can't compare offset-naive and offset-aware datetimes
+INFO:     127.0.0.1:61767 - "POST /tasks/with-scheduling?force_bump=true HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/middleware/cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/middleware/cors.py", line 146, in simple_response
+    await self.app(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/routing.py", line 762, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/routing.py", line 782, in app
+    await route.handle(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/routing.py", line 72, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/fastapi/routing.py", line 299, in app
+    raise e
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/fastapi/routing.py", line 294, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/concurrency.py", line 40, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/anyio/to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/Desktop/pro/code/task-manager/backend/main.py", line 761, in create_task_with_scheduling
+    schedule_result = attempt_with_bumping(task_id)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/Desktop/pro/code/task-manager/backend/scheduling.py", line 414, in attempt_with_bumping
+    sessions, remaining = create_task_sessions(task, available_slots)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/Desktop/pro/code/task-manager/backend/scheduling.py", line 202, in create_task_sessions
+    available_ranges = get_available_time_in_slot(slot_start, slot_end, task['id'])
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/Desktop/pro/code/task-manager/backend/scheduling.py", line 144, in get_available_time_in_slot
+    if current_start < conflict_start:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: can't compare offset-naive and offset-aware datetimes
+INFO:     127.0.0.1:61769 - "POST /tasks/with-scheduling?force_bump=true HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/middleware/cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/middleware/cors.py", line 146, in simple_response
+    await self.app(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/routing.py", line 762, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/routing.py", line 782, in app
+    await route.handle(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/routing.py", line 72, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/fastapi/routing.py", line 299, in app
+    raise e
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/fastapi/routing.py", line 294, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/starlette/concurrency.py", line 40, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/anyio/to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/Serkan/miniforge3/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/Desktop/pro/code/task-manager/backend/main.py", line 761, in create_task_with_scheduling
+    schedule_result = attempt_with_bumping(task_id)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/Desktop/pro/code/task-manager/backend/scheduling.py", line 414, in attempt_with_bumping
+    sessions, remaining = create_task_sessions(task, available_slots)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/Desktop/pro/code/task-manager/backend/scheduling.py", line 202, in create_task_sessions
+    available_ranges = get_available_time_in_slot(slot_start, slot_end, task['id'])
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Serkan/Desktop/pro/code/task-manager/backend/scheduling.py", line 144, in get_available_time_in_slot
+    if current_start < conflict_start:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: can't compare offset-naive and offset-aware datetimes
+INFO:     127.0.0.1:61771 - "POST /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61771 - "POST /slots/manual HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61771 - "POST /time-allocations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61771 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61774 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 5 slots (completed=0 only)
+INFO:     127.0.0.1:61775 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61777 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 7 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 7: lab meeting
+  Task 7 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 7
+Processing task 8: lab meeting
+  Task 8 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 8
+Processing task 9: lab meeting
+  Task 9 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 9
+Processing task 10: lab meetings
+  Task 10 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 10
+Processing task 11: lab meetings
+  Task 11 has 53 slots
+  Estimated: 2.0h, Scheduled: 106.0h, Diff: 104.0h
+  MISMATCH FOUND for task 11
+=== SANITY CHECK COMPLETE: 5 mismatches found ===
+INFO:     127.0.0.1:61777 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61781 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 1 slots (completed=0 only)
+INFO:     127.0.0.1:61779 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61783 - "GET /slots?start_date=2026-01-26&end_date=2026-02-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61785 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 7 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 7: lab meeting
+  Task 7 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 7
+Processing task 8: lab meeting
+  Task 8 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 8
+Processing task 9: lab meeting
+  Task 9 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 9
+Processing task 10: lab meetings
+  Task 10 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 10
+Processing task 11: lab meetings
+  Task 11 has 53 slots
+  Estimated: 2.0h, Scheduled: 106.0h, Diff: 104.0h
+  MISMATCH FOUND for task 11
+=== SANITY CHECK COMPLETE: 5 mismatches found ===
+INFO:     127.0.0.1:61785 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+get_slots: Returning 1 slots (completed=0 only)
+INFO:     127.0.0.1:61783 - "GET /projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61779 - "GET /slots?start_date=2026-02-02&end_date=2026-02-08 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61785 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61781 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 7 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 7: lab meeting
+  Task 7 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 7
+Processing task 8: lab meeting
+  Task 8 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 8
+Processing task 9: lab meeting
+  Task 9 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 9
+Processing task 10: lab meetings
+  Task 10 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 10
+Processing task 11: lab meetings
+  Task 11 has 53 slots
+  Estimated: 2.0h, Scheduled: 106.0h, Diff: 104.0h
+  MISMATCH FOUND for task 11
+=== SANITY CHECK COMPLETE: 5 mismatches found ===
+INFO:     127.0.0.1:61781 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+get_slots: Returning 1 slots (completed=0 only)
+INFO:     127.0.0.1:61779 - "GET /slots?start_date=2026-01-26&end_date=2026-02-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61785 - "GET /projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61781 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61783 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 7 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 7: lab meeting
+  Task 7 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 7
+Processing task 8: lab meeting
+  Task 8 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 8
+Processing task 9: lab meeting
+  Task 9 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 9
+Processing task 10: lab meetings
+  Task 10 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 10
+Processing task 11: lab meetings
+  Task 11 has 53 slots
+  Estimated: 2.0h, Scheduled: 106.0h, Diff: 104.0h
+  MISMATCH FOUND for task 11
+=== SANITY CHECK COMPLETE: 5 mismatches found ===
+INFO:     127.0.0.1:61783 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61781 - "GET /projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61783 - "GET /tasks HTTP/1.1" 200 OK
+get_slots: Returning 5 slots (completed=0 only)
+INFO:     127.0.0.1:61785 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61779 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 7 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 7: lab meeting
+  Task 7 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 7
+Processing task 8: lab meeting
+  Task 8 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 8
+Processing task 9: lab meeting
+  Task 9 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 9
+Processing task 10: lab meetings
+  Task 10 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 10
+Processing task 11: lab meetings
+  Task 11 has 53 slots
+  Estimated: 2.0h, Scheduled: 106.0h, Diff: 104.0h
+  MISMATCH FOUND for task 11
+=== SANITY CHECK COMPLETE: 5 mismatches found ===
+INFO:     127.0.0.1:61779 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61783 - "OPTIONS /slots?start_date=2026-01-12&end_date=2026-01-18 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61785 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 0 slots (completed=0 only)
+INFO:     127.0.0.1:61783 - "GET /slots?start_date=2026-01-12&end_date=2026-01-18 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61779 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61781 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 7 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 7: lab meeting
+  Task 7 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 7
+Processing task 8: lab meeting
+  Task 8 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 8
+Processing task 9: lab meeting
+  Task 9 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 9
+Processing task 10: lab meetings
+  Task 10 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 10
+Processing task 11: lab meetings
+  Task 11 has 53 slots
+  Estimated: 2.0h, Scheduled: 106.0h, Diff: 104.0h
+  MISMATCH FOUND for task 11
+=== SANITY CHECK COMPLETE: 5 mismatches found ===
+INFO:     127.0.0.1:61781 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61779 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 5 slots (completed=0 only)
+INFO:     127.0.0.1:61783 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61781 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61785 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 7 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 7: lab meeting
+  Task 7 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 7
+Processing task 8: lab meeting
+  Task 8 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 8
+Processing task 9: lab meeting
+  Task 9 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 9
+Processing task 10: lab meetings
+  Task 10 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 10
+Processing task 11: lab meetings
+  Task 11 has 53 slots
+  Estimated: 2.0h, Scheduled: 106.0h, Diff: 104.0h
+  MISMATCH FOUND for task 11
+=== SANITY CHECK COMPLETE: 5 mismatches found ===
+INFO:     127.0.0.1:61785 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61781 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 1 slots (completed=0 only)
+INFO:     127.0.0.1:61785 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61783 - "GET /slots?start_date=2026-01-26&end_date=2026-02-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61779 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 7 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 7: lab meeting
+  Task 7 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 7
+Processing task 8: lab meeting
+  Task 8 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 8
+Processing task 9: lab meeting
+  Task 9 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 9
+Processing task 10: lab meetings
+  Task 10 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 10
+Processing task 11: lab meetings
+  Task 11 has 53 slots
+  Estimated: 2.0h, Scheduled: 106.0h, Diff: 104.0h
+  MISMATCH FOUND for task 11
+=== SANITY CHECK COMPLETE: 5 mismatches found ===
+INFO:     127.0.0.1:61779 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61783 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 1 slots (completed=0 only)
+INFO:     127.0.0.1:61779 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61785 - "GET /slots?start_date=2026-02-02&end_date=2026-02-08 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61781 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 7 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 7: lab meeting
+  Task 7 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 7
+Processing task 8: lab meeting
+  Task 8 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 8
+Processing task 9: lab meeting
+  Task 9 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 9
+Processing task 10: lab meetings
+  Task 10 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 10
+Processing task 11: lab meetings
+  Task 11 has 53 slots
+  Estimated: 2.0h, Scheduled: 106.0h, Diff: 104.0h
+  MISMATCH FOUND for task 11
+=== SANITY CHECK COMPLETE: 5 mismatches found ===
+INFO:     127.0.0.1:61781 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61779 - "OPTIONS /slots?start_date=2026-02-09&end_date=2026-02-15 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61785 - "GET /projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61781 - "GET /tasks HTTP/1.1" 200 OK
+get_slots: Returning 1 slots (completed=0 only)
+INFO:     127.0.0.1:61779 - "GET /slots?start_date=2026-02-09&end_date=2026-02-15 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61783 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 7 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 7: lab meeting
+  Task 7 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 7
+Processing task 8: lab meeting
+  Task 8 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 8
+Processing task 9: lab meeting
+  Task 9 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 9
+Processing task 10: lab meetings
+  Task 10 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 10
+Processing task 11: lab meetings
+  Task 11 has 53 slots
+  Estimated: 2.0h, Scheduled: 106.0h, Diff: 104.0h
+  MISMATCH FOUND for task 11
+=== SANITY CHECK COMPLETE: 5 mismatches found ===
+INFO:     127.0.0.1:61783 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61781 - "OPTIONS /slots?start_date=2026-02-16&end_date=2026-02-22 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61779 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 1 slots (completed=0 only)
+INFO:     127.0.0.1:61783 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61781 - "GET /slots?start_date=2026-02-16&end_date=2026-02-22 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61785 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 7 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 7: lab meeting
+  Task 7 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 7
+Processing task 8: lab meeting
+  Task 8 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 8
+Processing task 9: lab meeting
+  Task 9 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 9
+Processing task 10: lab meetings
+  Task 10 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 10
+Processing task 11: lab meetings
+  Task 11 has 53 slots
+  Estimated: 2.0h, Scheduled: 106.0h, Diff: 104.0h
+  MISMATCH FOUND for task 11
+=== SANITY CHECK COMPLETE: 5 mismatches found ===
+INFO:     127.0.0.1:61785 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61783 - "OPTIONS /slots?start_date=2026-02-23&end_date=2026-03-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61781 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 1 slots (completed=0 only)
+INFO:     127.0.0.1:61783 - "GET /slots?start_date=2026-02-23&end_date=2026-03-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61785 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61779 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 7 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 7: lab meeting
+  Task 7 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 7
+Processing task 8: lab meeting
+  Task 8 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 8
+Processing task 9: lab meeting
+  Task 9 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 9
+Processing task 10: lab meetings
+  Task 10 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 10
+Processing task 11: lab meetings
+  Task 11 has 53 slots
+  Estimated: 2.0h, Scheduled: 106.0h, Diff: 104.0h
+  MISMATCH FOUND for task 11
+=== SANITY CHECK COMPLETE: 5 mismatches found ===
+INFO:     127.0.0.1:61779 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61783 - "OPTIONS /slots?start_date=2026-03-02&end_date=2026-03-08 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61785 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 1 slots (completed=0 only)
+INFO:     127.0.0.1:61783 - "GET /slots?start_date=2026-03-02&end_date=2026-03-08 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61779 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61781 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 7 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 7: lab meeting
+  Task 7 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 7
+Processing task 8: lab meeting
+  Task 8 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 8
+Processing task 9: lab meeting
+  Task 9 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 9
+Processing task 10: lab meetings
+  Task 10 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 10
+Processing task 11: lab meetings
+  Task 11 has 53 slots
+  Estimated: 2.0h, Scheduled: 106.0h, Diff: 104.0h
+  MISMATCH FOUND for task 11
+=== SANITY CHECK COMPLETE: 5 mismatches found ===
+INFO:     127.0.0.1:61781 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61783 - "OPTIONS /slots?start_date=2026-03-09&end_date=2026-03-15 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61779 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 1 slots (completed=0 only)
+INFO:     127.0.0.1:61783 - "GET /slots?start_date=2026-03-09&end_date=2026-03-15 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61781 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61785 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 7 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 7: lab meeting
+  Task 7 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 7
+Processing task 8: lab meeting
+  Task 8 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 8
+Processing task 9: lab meeting
+  Task 9 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 9
+Processing task 10: lab meetings
+  Task 10 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 10
+Processing task 11: lab meetings
+  Task 11 has 53 slots
+  Estimated: 2.0h, Scheduled: 106.0h, Diff: 104.0h
+  MISMATCH FOUND for task 11
+=== SANITY CHECK COMPLETE: 5 mismatches found ===
+INFO:     127.0.0.1:61785 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61783 - "OPTIONS /slots?start_date=2026-03-16&end_date=2026-03-22 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61785 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61781 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 1 slots (completed=0 only)
+INFO:     127.0.0.1:61783 - "GET /slots?start_date=2026-03-16&end_date=2026-03-22 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61779 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 7 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 7: lab meeting
+  Task 7 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 7
+Processing task 8: lab meeting
+  Task 8 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 8
+Processing task 9: lab meeting
+  Task 9 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 9
+Processing task 10: lab meetings
+  Task 10 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 10
+Processing task 11: lab meetings
+  Task 11 has 53 slots
+  Estimated: 2.0h, Scheduled: 106.0h, Diff: 104.0h
+  MISMATCH FOUND for task 11
+=== SANITY CHECK COMPLETE: 5 mismatches found ===
+INFO:     127.0.0.1:61779 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61781 - "OPTIONS /slots?start_date=2026-03-23&end_date=2026-03-29 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61783 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 1 slots (completed=0 only)
+INFO:     127.0.0.1:61779 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61781 - "GET /slots?start_date=2026-03-23&end_date=2026-03-29 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61785 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 7 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 7: lab meeting
+  Task 7 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 7
+Processing task 8: lab meeting
+  Task 8 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 8
+Processing task 9: lab meeting
+  Task 9 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 9
+Processing task 10: lab meetings
+  Task 10 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 10
+Processing task 11: lab meetings
+  Task 11 has 53 slots
+  Estimated: 2.0h, Scheduled: 106.0h, Diff: 104.0h
+  MISMATCH FOUND for task 11
+=== SANITY CHECK COMPLETE: 5 mismatches found ===
+INFO:     127.0.0.1:61785 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61779 - "OPTIONS /slots?start_date=2026-03-30&end_date=2026-04-05 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61785 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61781 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 1 slots (completed=0 only)
+INFO:     127.0.0.1:61779 - "GET /slots?start_date=2026-03-30&end_date=2026-04-05 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61783 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 7 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 7: lab meeting
+  Task 7 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 7
+Processing task 8: lab meeting
+  Task 8 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 8
+Processing task 9: lab meeting
+  Task 9 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 9
+Processing task 10: lab meetings
+  Task 10 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 10
+Processing task 11: lab meetings
+  Task 11 has 53 slots
+  Estimated: 2.0h, Scheduled: 106.0h, Diff: 104.0h
+  MISMATCH FOUND for task 11
+=== SANITY CHECK COMPLETE: 5 mismatches found ===
+INFO:     127.0.0.1:61783 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61781 - "OPTIONS /slots?start_date=2026-04-06&end_date=2026-04-12 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61779 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 1 slots (completed=0 only)
+INFO:     127.0.0.1:61783 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61781 - "GET /slots?start_date=2026-04-06&end_date=2026-04-12 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61785 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 7 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 7: lab meeting
+  Task 7 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 7
+Processing task 8: lab meeting
+  Task 8 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 8
+Processing task 9: lab meeting
+  Task 9 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 9
+Processing task 10: lab meetings
+  Task 10 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 10
+Processing task 11: lab meetings
+  Task 11 has 53 slots
+  Estimated: 2.0h, Scheduled: 106.0h, Diff: 104.0h
+  MISMATCH FOUND for task 11
+=== SANITY CHECK COMPLETE: 5 mismatches found ===
+INFO:     127.0.0.1:61785 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61783 - "OPTIONS /slots?start_date=2026-04-13&end_date=2026-04-19 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61785 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61781 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 1 slots (completed=0 only)
+INFO:     127.0.0.1:61783 - "GET /slots?start_date=2026-04-13&end_date=2026-04-19 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61779 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 7 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 7: lab meeting
+  Task 7 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 7
+Processing task 8: lab meeting
+  Task 8 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 8
+Processing task 9: lab meeting
+  Task 9 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 9
+Processing task 10: lab meetings
+  Task 10 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 10
+Processing task 11: lab meetings
+  Task 11 has 53 slots
+  Estimated: 2.0h, Scheduled: 106.0h, Diff: 104.0h
+  MISMATCH FOUND for task 11
+=== SANITY CHECK COMPLETE: 5 mismatches found ===
+INFO:     127.0.0.1:61779 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61781 - "OPTIONS /slots?start_date=2026-04-20&end_date=2026-04-26 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61779 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61783 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 1 slots (completed=0 only)
+INFO:     127.0.0.1:61781 - "GET /slots?start_date=2026-04-20&end_date=2026-04-26 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61785 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 7 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 7: lab meeting
+  Task 7 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 7
+Processing task 8: lab meeting
+  Task 8 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 8
+Processing task 9: lab meeting
+  Task 9 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 9
+Processing task 10: lab meetings
+  Task 10 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 10
+Processing task 11: lab meetings
+  Task 11 has 53 slots
+  Estimated: 2.0h, Scheduled: 106.0h, Diff: 104.0h
+  MISMATCH FOUND for task 11
+=== SANITY CHECK COMPLETE: 5 mismatches found ===
+INFO:     127.0.0.1:61785 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61783 - "OPTIONS /slots?start_date=2026-04-27&end_date=2026-05-03 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61781 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 1 slots (completed=0 only)
+INFO:     127.0.0.1:61783 - "GET /slots?start_date=2026-04-27&end_date=2026-05-03 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61785 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61779 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 7 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 7: lab meeting
+  Task 7 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 7
+Processing task 8: lab meeting
+  Task 8 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 8
+Processing task 9: lab meeting
+  Task 9 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 9
+Processing task 10: lab meetings
+  Task 10 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 10
+Processing task 11: lab meetings
+  Task 11 has 53 slots
+  Estimated: 2.0h, Scheduled: 106.0h, Diff: 104.0h
+  MISMATCH FOUND for task 11
+=== SANITY CHECK COMPLETE: 5 mismatches found ===
+INFO:     127.0.0.1:61779 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+get_slots: Returning 1 slots (completed=0 only)
+INFO:     127.0.0.1:61785 - "GET /projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61783 - "GET /slots?start_date=2026-04-20&end_date=2026-04-26 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61779 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61781 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 7 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 7: lab meeting
+  Task 7 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 7
+Processing task 8: lab meeting
+  Task 8 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 8
+Processing task 9: lab meeting
+  Task 9 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 9
+Processing task 10: lab meetings
+  Task 10 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 10
+Processing task 11: lab meetings
+  Task 11 has 53 slots
+  Estimated: 2.0h, Scheduled: 106.0h, Diff: 104.0h
+  MISMATCH FOUND for task 11
+=== SANITY CHECK COMPLETE: 5 mismatches found ===
+INFO:     127.0.0.1:61781 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+get_slots: Returning 5 slots (completed=0 only)
+INFO:     127.0.0.1:61779 - "GET /projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61781 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61783 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61785 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 7 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 7: lab meeting
+  Task 7 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 7
+Processing task 8: lab meeting
+  Task 8 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 8
+Processing task 9: lab meeting
+  Task 9 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 9
+Processing task 10: lab meetings
+  Task 10 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 10
+Processing task 11: lab meetings
+  Task 11 has 53 slots
+  Estimated: 2.0h, Scheduled: 106.0h, Diff: 104.0h
+  MISMATCH FOUND for task 11
+=== SANITY CHECK COMPLETE: 5 mismatches found ===
+INFO:     127.0.0.1:61785 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61785 - "OPTIONS /tasks/8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61785 - "DELETE /tasks/8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61783 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 5 slots (completed=0 only)
+INFO:     127.0.0.1:61785 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61781 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61779 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 6 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 7: lab meeting
+  Task 7 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 7
+Processing task 9: lab meeting
+  Task 9 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 9
+Processing task 10: lab meetings
+  Task 10 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 10
+Processing task 11: lab meetings
+  Task 11 has 53 slots
+  Estimated: 2.0h, Scheduled: 106.0h, Diff: 104.0h
+  MISMATCH FOUND for task 11
+=== SANITY CHECK COMPLETE: 4 mismatches found ===
+INFO:     127.0.0.1:61779 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61779 - "OPTIONS /tasks/7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61779 - "DELETE /tasks/7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61781 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 5 slots (completed=0 only)
+INFO:     127.0.0.1:61785 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61779 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61783 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 5 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 9: lab meeting
+  Task 9 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 9
+Processing task 10: lab meetings
+  Task 10 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 10
+Processing task 11: lab meetings
+  Task 11 has 53 slots
+  Estimated: 2.0h, Scheduled: 106.0h, Diff: 104.0h
+  MISMATCH FOUND for task 11
+=== SANITY CHECK COMPLETE: 3 mismatches found ===
+INFO:     127.0.0.1:61783 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61783 - "OPTIONS /tasks/9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61783 - "DELETE /tasks/9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61779 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 5 slots (completed=0 only)
+INFO:     127.0.0.1:61783 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61785 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61781 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 4 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 10: lab meetings
+  Task 10 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 10
+Processing task 11: lab meetings
+  Task 11 has 53 slots
+  Estimated: 2.0h, Scheduled: 106.0h, Diff: 104.0h
+  MISMATCH FOUND for task 11
+=== SANITY CHECK COMPLETE: 2 mismatches found ===
+INFO:     127.0.0.1:61781 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 4 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 10: lab meetings
+  Task 10 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 10
+Processing task 11: lab meetings
+  Task 11 has 53 slots
+  Estimated: 2.0h, Scheduled: 106.0h, Diff: 104.0h
+  MISMATCH FOUND for task 11
+=== SANITY CHECK COMPLETE: 2 mismatches found ===
+INFO:     127.0.0.1:61781 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61797 - "OPTIONS /tasks/11 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61797 - "DELETE /tasks/11 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61797 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61801 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 4 slots (completed=0 only)
+INFO:     127.0.0.1:61802 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61803 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 3 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 10: lab meetings
+  Task 10 has 0 slots
+  Estimated: 2.0h, Scheduled: 0h, Diff: 2.0h
+  MISMATCH FOUND for task 10
+=== SANITY CHECK COMPLETE: 1 mismatches found ===
+INFO:     127.0.0.1:61803 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61803 - "OPTIONS /tasks/10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61803 - "DELETE /tasks/10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61802 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 4 slots (completed=0 only)
+INFO:     127.0.0.1:61803 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61801 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61797 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 2 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+=== SANITY CHECK COMPLETE: 0 mismatches found ===
+INFO:     127.0.0.1:61797 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61808 - "GET /settings/calendar HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61808 - "GET /blocked-times HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61808 - "PATCH /settings/calendar HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61808 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61816 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 4 slots (completed=0 only)
+INFO:     127.0.0.1:61818 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61819 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 2 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+=== SANITY CHECK COMPLETE: 0 mismatches found ===
+INFO:     127.0.0.1:61819 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61829 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 4 slots (completed=0 only)
+INFO:     127.0.0.1:61827 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61830 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61831 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 2 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+=== SANITY CHECK COMPLETE: 0 mismatches found ===
+INFO:     127.0.0.1:61831 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61833 - "OPTIONS /settings/calendar HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61833 - "GET /settings/calendar HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61833 - "OPTIONS /blocked-times HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61833 - "GET /blocked-times HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61835 - "PATCH /settings/calendar HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61835 - "OPTIONS /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61837 - "OPTIONS /projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61839 - "OPTIONS /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61841 - "OPTIONS /stats/overview HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61835 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61837 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 4 slots (completed=0 only)
+INFO:     127.0.0.1:61839 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61841 - "GET /stats/overview HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61841 - "OPTIONS /tasks/sanity-check HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 2 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+=== SANITY CHECK COMPLETE: 0 mismatches found ===
+INFO:     127.0.0.1:61841 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61841 - "GET /settings/calendar HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61841 - "GET /blocked-times HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61844 - "OPTIONS /schedule/auto HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61844 - "POST /schedule/auto HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61844 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61848 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 4 slots (completed=0 only)
+INFO:     127.0.0.1:61849 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61850 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 2 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+=== SANITY CHECK COMPLETE: 0 mismatches found ===
+INFO:     127.0.0.1:61850 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61852 - "OPTIONS /slots/20/move HTTP/1.1" 200 OK
+move_slot called: slot_id=20, move_data=new_start=datetime.datetime(2026, 1, 22, 11, 45, tzinfo=TzInfo(UTC)) swap_with_slot_id=None
+Slot found: {'id': 20, 'task_id': 3, 'start_datetime': '2026-01-19T15:15:00+00:00', 'end_datetime': '2026-01-19T17:15:00+00:00', 'source': 'manual', 'is_override': 1, 'original_start': '2026-01-21T09:00:00', 'is_fixed': 0, 'completed': 0, 'completed_at': None, 'actual_hours': None, 'time_tracking_start': None}
+Task is reschedulable: 1
+Duration calculated: 2:00:00
+Moving slot from 2026-01-19 15:15:00 to 2026-01-22 11:45:00+00:00, duration=2:00:00
+Checking for conflicts...
+Conflict check result: {'has_conflict': False}
+No conflict, updating slot
+Slot 20 moved successfully
+INFO:     127.0.0.1:61852 - "PUT /slots/20/move HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61852 - "GET /tasks HTTP/1.1" 200 OK
+get_slots: Returning 4 slots (completed=0 only)
+INFO:     127.0.0.1:61856 - "GET /projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61857 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61858 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 2 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+=== SANITY CHECK COMPLETE: 0 mismatches found ===
+INFO:     127.0.0.1:61858 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61858 - "OPTIONS /slots/fill-suggestions?start_time=2026-01-20T15%3A15%3A00.000Z&end_time=2026-01-20T18%3A00%3A00.000Z HTTP/1.1" 200 OK
+Getting fill suggestions for 2026-01-20T15:15:00.000Z to 2026-01-20T18:00:00.000Z
+Available slot duration: 2.75h
+Found 2 future movable slots
+Returning 1 suggestions
+INFO:     127.0.0.1:61858 - "GET /slots/fill-suggestions?start_time=2026-01-20T15%3A15%3A00.000Z&end_time=2026-01-20T18%3A00%3A00.000Z HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61864 - "OPTIONS /slots/fill-suggestions?start_time=2026-01-20T10%3A15%3A00.000Z&end_time=2026-01-20T13%3A00%3A00.000Z HTTP/1.1" 200 OK
+Getting fill suggestions for 2026-01-20T10:15:00.000Z to 2026-01-20T13:00:00.000Z
+Available slot duration: 2.75h
+Found 2 future movable slots
+Returning 1 suggestions
+INFO:     127.0.0.1:61864 - "GET /slots/fill-suggestions?start_time=2026-01-20T10%3A15%3A00.000Z&end_time=2026-01-20T13%3A00%3A00.000Z HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61866 - "GET /settings/calendar HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61866 - "GET /blocked-times HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61866 - "GET /settings/calendar HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61866 - "GET /blocked-times HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61868 - "GET /settings/calendar HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61868 - "GET /blocked-times HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61870 - "GET /settings/calendar HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61870 - "GET /blocked-times HTTP/1.1" 200 OK
+/Users/Serkan/Desktop/pro/code/task-manager/backend/main.py:648: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.5/migration/
+  block_dict = block.dict()
+INFO:     127.0.0.1:61872 - "POST /blocked-times HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "GET /blocked-times HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "PATCH /settings/calendar HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61875 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 4 slots (completed=0 only)
+INFO:     127.0.0.1:61877 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61878 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 2 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+=== SANITY CHECK COMPLETE: 0 mismatches found ===
+INFO:     127.0.0.1:61878 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61878 - "OPTIONS /slots/fill-suggestions?start_time=2026-01-23T12%3A00%3A00.000Z&end_time=2026-01-23T18%3A00%3A00.000Z HTTP/1.1" 200 OK
+Getting fill suggestions for 2026-01-23T12:00:00.000Z to 2026-01-23T18:00:00.000Z
+Available slot duration: 6.0h
+Found 0 future movable slots
+Returning 0 suggestions
+INFO:     127.0.0.1:61878 - "GET /slots/fill-suggestions?start_time=2026-01-23T12%3A00%3A00.000Z&end_time=2026-01-23T18%3A00%3A00.000Z HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61878 - "GET /settings/calendar HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61878 - "GET /blocked-times HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61881 - "OPTIONS /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61881 - "POST /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61881 - "OPTIONS /slots/manual HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61881 - "POST /slots/manual HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61881 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61883 - "GET /projects HTTP/1.1" 200 OK
+get_slots: Returning 5 slots (completed=0 only)
+INFO:     127.0.0.1:61886 - "GET /slots?start_date=2026-01-19&end_date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61887 - "GET /stats/overview HTTP/1.1" 200 OK
+=== SANITY CHECK STARTED ===
+Fetching active tasks...
+Found 3 active tasks
+Processing task 2: Imaging related
+  Task 2 has 7 slots
+  Estimated: 24.0h, Scheduled: 24.0h, Diff: 0.0h
+Processing task 3: test
+  Task 3 has 1 slots
+  Estimated: 2.0h, Scheduled: 2.0h, Diff: 0.0h
+Processing task 12: test
+  Task 12 has 1 slots
+  Estimated: 1.0h, Scheduled: 1.0h, Diff: 0.0h
+=== SANITY CHECK COMPLETE: 0 mismatches found ===
+INFO:     127.0.0.1:61887 - "GET /tasks/sanity-check HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [51416]
