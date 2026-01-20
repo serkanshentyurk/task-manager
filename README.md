@@ -81,7 +81,7 @@ Perfect for managing the complex, non-linear nature of PhD research work.
 
 1. **Clone the repository**
 ```bash
-git clone <repository-url>
+git clone https://github.com/serkanshentyurk/task-manager
 cd phd-task-manager
 ```
 
