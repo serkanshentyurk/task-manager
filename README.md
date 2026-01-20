@@ -7,7 +7,7 @@ A comprehensive task management application specifically designed for PhD studen
 
 ---
 
-## 🎯 Overview
+## Overview
 
 PhD Task Manager helps you organise your research workflow with:
 - **Smart Auto-Scheduling** - Automatically allocate tasks based on deadlines, priorities, and your availability
@@ -22,7 +22,7 @@ Perfect for managing the complex, non-linear nature of PhD research work.
 
 ---
 
-## ✨ Features
+## Features
 
 ### Core Task Management
 - ✅ Create tasks with priorities (P1-P5), deadlines, and estimated hours
@@ -64,7 +64,7 @@ Perfect for managing the complex, non-linear nature of PhD research work.
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.9+
@@ -109,7 +109,7 @@ The app will open automatically at `http://localhost:3000`
 
 ---
 
-## 📖 User Guide
+## User Guide
 
 ### Getting Started
 
@@ -295,7 +295,7 @@ Access via ⚙️ button (top-right):
 
 ---
 
-## 🏗️ Technical Architecture
+## Technical Architecture
 
 ### Backend (Python/FastAPI)
 ```
@@ -361,7 +361,7 @@ frontend/src/
 
 ---
 
-## 🎨 Customisation
+## Customisation
 
 ### Changing Colours
 Project colours in `ProjectsView.svelte`:
@@ -393,7 +393,7 @@ Modify scheduling logic in `backend/scheduling.py`:
 
 ---
 
-## 🔧 Development
+## Development
 
 ### Project Structure
 ```
@@ -503,7 +503,7 @@ cp backend/tasks.db backend/tasks.backup.db
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### App Won't Start
 ```bash
@@ -625,7 +625,7 @@ If your department provides server access:
 
 ---
 
-## 🔒 Security Considerations
+## Security Considerations
 
 **Current State (Development):**
 - No authentication
@@ -645,7 +645,7 @@ If your department provides server access:
 
 ---
 
-## 📝 Future Enhancements
+## Future Enhancements
 
 ### Planned Features
 - [ ] Email reminders for upcoming deadlines
@@ -664,7 +664,7 @@ Open an issue on GitHub with feature requests or suggestions.
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please follow these steps:
 
@@ -687,10 +687,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-## 🙏 Acknowledgements
-
-Built for PhD students who need flexible, intelligent task management that understands the unique demands of academic research.
-
 **Technologies:**
 - [FastAPI](https://fastapi.tiangolo.com/) - Backend framework
 - [Svelte](https://svelte.dev/) - Frontend framework
@@ -699,28 +695,15 @@ Built for PhD students who need flexible, intelligent task management that under
 
 ---
 
-## 📧 Support
+## Support
 
 For questions, issues, or suggestions:
 - Open an issue on GitHub
-- Email: [your-email]
+- Email: serkan[dot]shentyurk[dot]24[at]ucl[dot]ac[dot]uk
 - Documentation: See this README
 
 ---
 
-## 📚 Additional Resources
-
-**For PhD Students:**
-- [Getting Things Done (GTD)](https://gettingthingsdone.com/) - Productivity methodology
-- [Academic Writing Resources](https://www.nature.com/articles/d41586-018-02404-4)
-- [PhD Time Management Tips](https://www.timeshighereducation.com/student/advice/time-management-phd-students)
-
-**For Developers:**
-- [FastAPI Documentation](https://fastapi.tiangolo.com/)
-- [Svelte Tutorial](https://svelte.dev/tutorial)
-- [SQLite Documentation](https://www.sqlite.org/docs.html)
-
----
 
 **Last Updated:** January 2026
 **Version:** 1.0.0
