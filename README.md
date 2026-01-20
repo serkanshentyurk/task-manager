@@ -1,12 +1,9 @@
-# PhD Task Manager
+# Task Manager
 
 A comprehensive task management application specifically designed for PhD students and researchers. Built to handle the complex, flexible scheduling demands of academic research with smart auto-scheduling, recurring tasks, project organisation, and both weekly and monthly calendar views.
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
-Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
-
-This work is licensed under a
-[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
 
@@ -18,7 +15,7 @@ This work is licensed under a
 
 ## Overview
 
-PhD Task Manager helps you organise your research workflow with:
+Task Manager helps you organise your research workflow with:
 - **Smart Auto-Scheduling** - Automatically allocate tasks based on deadlines, priorities, and your availability
 - **Recurring Tasks** - Weekly meetings, daily data collection, regular lab work
 - **Project Organisation** - Group tasks by research area (imaging study, modelling, literature review, teaching)
@@ -691,8 +688,6 @@ Contributions are welcome! Please follow these steps:
 ---
 
 ## 📄 License
-
-Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
